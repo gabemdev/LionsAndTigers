@@ -208,7 +208,82 @@
                     <view key="view" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="qsq-xF-9gP">
                         <rect key="frame" x="0.0" y="0.0" width="240" height="84"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="qND-aU-ydH">
+                                <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                                <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="12" minimumInteritemSpacing="12" id="v12-jF-TNp">
+                                    <size key="itemSize" width="140" height="140"/>
+                                    <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                                    <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                                    <inset key="sectionInset" minX="10" minY="10" maxX="10" maxY="10"/>
+                                </collectionViewFlowLayout>
+                                <cells>
+                                    <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="Cell" id="JTQ-kH-DEd" customClass="CustomCollectionViewCell">
+                                        <rect key="frame" x="0.0" y="0.0" width="50" height="50"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                                            <rect key="frame" x="0.0" y="0.0" width="140" height="140"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="t4f-He-oPf">
+                                                    <rect key="frame" x="0.0" y="0.0" width="240" height="128"/>
+                                                    <variation key="widthClass=compact" fixedFrame="YES">
+                                                        <rect key="frame" x="0.0" y="0.0" width="140" height="140"/>
+                                                    </variation>
+                                                </imageView>
+                                            </subviews>
+                                            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                        </view>
+                                        <variation key="default">
+                                            <mask key="subviews">
+                                                <exclude reference="t4f-He-oPf"/>
+                                            </mask>
+                                        </variation>
+                                        <variation key="widthClass=compact">
+                                            <mask key="subviews">
+                                                <include reference="t4f-He-oPf"/>
+                                            </mask>
+                                        </variation>
+                                        <connections>
+                                            <outlet property="cellImageView" destination="t4f-He-oPf" id="SRo-0w-CSk"/>
+                                        </connections>
+                                    </collectionViewCell>
+                                </cells>
+                                <connections>
+                                    <outlet property="dataSource" destination="lQi-bw-H75" id="6td-Bh-rG4"/>
+                                    <outlet property="delegate" destination="lQi-bw-H75" id="DCO-y3-aPh"/>
+                                </connections>
+                            </collectionView>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="qND-aU-ydH" firstAttribute="leading" secondItem="qsq-xF-9gP" secondAttribute="leadingMargin" constant="-16" id="5se-dJ-aSt"/>
+                            <constraint firstItem="7cT-2c-Bhg" firstAttribute="top" secondItem="qND-aU-ydH" secondAttribute="bottom" id="73n-ka-3hd"/>
+                            <constraint firstItem="qND-aU-ydH" firstAttribute="top" secondItem="KAp-v4-OoA" secondAttribute="bottom" id="kZh-5S-j9e"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="qND-aU-ydH" secondAttribute="trailing" constant="-16" id="rMR-q1-s5t"/>
+                        </constraints>
+                        <variation key="default">
+                            <mask key="subviews">
+                                <exclude reference="qND-aU-ydH"/>
+                            </mask>
+                            <mask key="constraints">
+                                <exclude reference="5se-dJ-aSt"/>
+                                <exclude reference="kZh-5S-j9e"/>
+                                <exclude reference="rMR-q1-s5t"/>
+                                <exclude reference="73n-ka-3hd"/>
+                            </mask>
+                        </variation>
+                        <variation key="widthClass=compact">
+                            <mask key="subviews">
+                                <include reference="qND-aU-ydH"/>
+                            </mask>
+                            <mask key="constraints">
+                                <include reference="5se-dJ-aSt"/>
+                                <include reference="kZh-5S-j9e"/>
+                                <include reference="rMR-q1-s5t"/>
+                                <include reference="73n-ka-3hd"/>
+                            </mask>
+                        </variation>
                     </view>
                     <toolbarItems/>
                     <navigationItem key="navigationItem" id="KuG-hM-7Ag">

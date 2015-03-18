@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		6D10B72F1ABA25F600DAB2E1 /* CustomCollectionViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 6D10B72E1ABA25F600DAB2E1 /* CustomCollectionViewCell.m */; };
 		6D38140D1ABA01AD0043CF6B /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 6D38140C1ABA01AD0043CF6B /* main.m */; };
 		6D3814101ABA01AD0043CF6B /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 6D38140F1ABA01AD0043CF6B /* AppDelegate.m */; };
 		6D3814161ABA01AD0043CF6B /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6D3814141ABA01AD0043CF6B /* Main.storyboard */; };
@@ -29,6 +30,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		6D10B72D1ABA25F600DAB2E1 /* CustomCollectionViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CustomCollectionViewCell.h; sourceTree = "<group>"; };
+		6D10B72E1ABA25F600DAB2E1 /* CustomCollectionViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CustomCollectionViewCell.m; sourceTree = "<group>"; };
 		6D3814071ABA01AD0043CF6B /* LionsAndTigers.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LionsAndTigers.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		6D38140B1ABA01AD0043CF6B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		6D38140C1ABA01AD0043CF6B /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
@@ -95,6 +98,8 @@
 				6D3814341ABA052A0043CF6B /* TopViewController.m */,
 				6D3814361ABA05360043CF6B /* HUDViewController.h */,
 				6D3814371ABA05360043CF6B /* HUDViewController.m */,
+				6D10B72D1ABA25F600DAB2E1 /* CustomCollectionViewCell.h */,
+				6D10B72E1ABA25F600DAB2E1 /* CustomCollectionViewCell.m */,
 				6D3814141ABA01AD0043CF6B /* Main.storyboard */,
 				6D3814171ABA01AD0043CF6B /* Images.xcassets */,
 				6D3814191ABA01AD0043CF6B /* LaunchScreen.xib */,
@@ -232,6 +237,7 @@
 				6D3814381ABA05360043CF6B /* HUDViewController.m in Sources */,
 				6D3814351ABA052A0043CF6B /* TopViewController.m in Sources */,
 				6D3814101ABA01AD0043CF6B /* AppDelegate.m in Sources */,
+				6D10B72F1ABA25F600DAB2E1 /* CustomCollectionViewCell.m in Sources */,
 				6D38140D1ABA01AD0043CF6B /* main.m in Sources */,
 				6D3814321ABA048F0043CF6B /* RootViewController.m in Sources */,
 			);
@@ -424,6 +430,7 @@
 				6D38142C1ABA01AD0043CF6B /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		6D38142D1ABA01AD0043CF6B /* Build configuration list for PBXNativeTarget "LionsAndTigersTests" */ = {
 			isa = XCConfigurationList;
@@ -432,6 +439,7 @@
 				6D38142F1ABA01AD0043CF6B /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

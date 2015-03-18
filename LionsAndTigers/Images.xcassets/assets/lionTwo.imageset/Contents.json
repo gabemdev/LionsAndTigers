@@ -3,16 +3,12 @@
     {
       "idiom" : "universal",
       "scale" : "1x",
-      "filename" : "menu.png"
+      "filename" : "lionTwo.png"
     },
     {
       "idiom" : "universal",
       "scale" : "2x",
-      "filename" : "menu@2x.png"
-    },
-    {
-      "idiom" : "universal",
-      "scale" : "3x"
+      "filename" : "lionTwo@2x.png"
     }
   ],
   "info" : {

@@ -3,16 +3,12 @@
     {
       "idiom" : "universal",
       "scale" : "1x",
-      "filename" : "menu.png"
+      "filename" : "tigerTwo.png"
     },
     {
       "idiom" : "universal",
       "scale" : "2x",
-      "filename" : "menu@2x.png"
-    },
-    {
-      "idiom" : "universal",
-      "scale" : "3x"
+      "filename" : "tigerTwo@2x.png"
     }
   ],
   "info" : {
