@@ -16,14 +16,12 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    // Do any additional setup after loading the view.
 }
 
 
 - (IBAction)lionsButtonTapped {
     [self.delegate lionsButtonTapped];
 }
-
 
 - (IBAction)tigersButtonTapped {
     [self.delegate tigersButtonTapped];

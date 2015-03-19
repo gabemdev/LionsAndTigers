@@ -11,7 +11,6 @@
 @protocol HUDDelegate <NSObject>
 
 - (void)tigersButtonTapped;
-
 - (void)lionsButtonTapped;
 
 @end

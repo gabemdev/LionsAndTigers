@@ -7,8 +7,9 @@
 //
 
 #import "TopViewController.h"
+#import "CustomCollectionViewCell.h"
 
-@interface TopViewController ()
+@interface TopViewController ()<UICollectionViewDataSource, UICollectionViewDelegate>
 
 @end
 
@@ -17,12 +18,31 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    // Do any additional setup after loading the view.
+
+    NSMutableArray *mainArray = [NSMutableArray arrayWithObjects: [UIImage imageNamed:@"tigerOne"], [UIImage imageNamed:@"tigerTwo"], [UIImage imageNamed:@"tigerThree"], nil];
+    self.photosArray = mainArray;
 }
 
+
+#pragma mark - UICollectionViewCellDataSource
+- (UICollectionViewCell *)collectionView:(UICollectionView *)collectionView cellForItemAtIndexPath:(NSIndexPath *)indexPath {
+    CustomCollectionViewCell *cell = [collectionView dequeueReusableCellWithReuseIdentifier:@"Cell" forIndexPath:indexPath];
+    cell.cellImageView.image = self.photosArray[indexPath.row];
+    cell.layer.borderColor = [UIColor colorWithRed:0.23 green:0.47 blue:0.85 alpha:1.00].CGColor;
+    cell.layer.borderWidth = 1.5;
+    cell.layer.cornerRadius = 20;
+    return cell;
+}
+
+-(NSInteger)collectionView:(UICollectionView *)collectionView numberOfItemsInSection:(NSInteger)section
+{
+    return self.photosArray.count;
+}
+
+
+#pragma mark - Actions
 - (IBAction)onPanelButtonTapped:(id)sender {
     [self.delegate topRevealButtonTapped];
-    NSLog(@"Button pressed");
 }
 
 @end
